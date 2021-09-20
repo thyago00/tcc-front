@@ -3,12 +3,27 @@ import { Platform } from 'react-native';
 import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
-  background-color: #ffff;
   flex: 1;
   justify-content: center;
   align-items: center;
 `;
 
+export const ShepeOne = styled.View`
+  background-color: #F24150;
+  border-bottom-left-radius: 80;
+  border-bottom-right-radius: 80;
+  width: 100%; 
+  height: 30%;
+
+`;
+export const ShepeTwo = styled.View`
+  background-color: #3BD98F;
+  border-bottom-left-radius: 80;
+  border-bottom-right-radius: 80;
+  width: 100%; 
+  height: 30%;
+
+`;
 export const SignMessageHeaderText = styled.Text``;
 
 
