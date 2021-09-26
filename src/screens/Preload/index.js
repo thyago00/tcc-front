@@ -24,7 +24,6 @@ export default () => {
               avatar: res.data.avatar,
             },
           });
-
           navigation.reset({
             routes: [{ name: "MainTab" }],
           });
