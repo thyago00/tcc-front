@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { Text, Image, StyleSheet } from "react-native";
 import { Container, LoadingIcon } from "./styles";
-import AsyncStorage from "@react-native-community/async-storage";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
 import Api from "../../Api";
 import { UserContext } from "../../contexts/UserContext";
