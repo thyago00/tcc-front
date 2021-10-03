@@ -39,16 +39,10 @@ export default () => {
 
   return (
     <Container>
-      <Image style={styles.img} source={PetLogo}></Image>
+     <PetLogo height="70" width="70"/>
       <LoadingIcon size="large" color="#ffff" />
     </Container>
   );
 };
 
-const styles = StyleSheet.create({
-  img: {
-    width: 200,
-    height: 200,
-    resizeMode: "stretch",
-  },
-});
+

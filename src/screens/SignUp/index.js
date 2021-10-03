@@ -1,5 +1,4 @@
 import React, { useState, useContext } from "react";
-import { Text, Image, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { UserContext } from "../../contexts/UserContext";
@@ -68,7 +67,7 @@ export default () => {
           
         </ShepeTwo>
       </ShepeOne>*/}
-      <Image style={styles.img} source={LoginLogo}></Image>
+      <LoginLogo height="200px" width="180px"/>
       <SignMessageHeaderText>Bem vindo ao ShopFinder.</SignMessageHeaderText>
 
       <InputArea>
@@ -104,10 +103,3 @@ export default () => {
   );
 };
 
-const styles = StyleSheet.create({
-  img: {
-    width: 200,
-    height: 200,
-    resizeMode: "stretch",
-  },
-});

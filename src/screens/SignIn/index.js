@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Image, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { UserContext } from '../../contexts/UserContext';
@@ -68,7 +68,7 @@ const handleMessageButtonClick = () => {
           
         </ShepeTwo>
       </ShepeOne>*/}
-      <Image style={styles.img} source={LoginLogo}></Image>
+      <LoginLogo height="200px" widht="180px"/>
       <SignMessageHeaderText>Bem vindo ao ShopFinder.</SignMessageHeaderText>
 
       <InputArea>
@@ -101,10 +101,3 @@ const handleMessageButtonClick = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  img: {
-    width: 200,
-    height: 200,
-    resizeMode: "stretch",
-  },
-});
